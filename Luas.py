@@ -17,7 +17,7 @@ def persegi () :
     keliling = 4*x
     luas= x*x
     print (' ' )
-    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Keliling >> ' , keliling , 'cm'
     print '[*]==// Luas >> ' , luas , 'cm2'
     
 def kubik () :
@@ -34,7 +34,7 @@ def persegipanjang () :
     keliling = 2*(x+y)
     luas= x*y
     print (' ' )
-    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Keliling >> ' , keliling , 'cm'
     print '[*]==// Luas >> ' , luas , 'cm2'
     
 def balok () :
@@ -63,7 +63,7 @@ def segitiga () :
     keliling= ab+bc+ca
     luas=0.5*x*y
     print (' ' )
-    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Keliling >> ' , keliling , 'cm'
     print '[*]==// Luas >> ' , luas , 'cm2'
     
 def lingkaran () :
@@ -90,7 +90,7 @@ def jajargenjang () :
     keliling = ab+bc+cd+da
     luas = x*y
     print ('')
-    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Keliling >> ' , keliling , 'cm'
     print '[*]==// Luas >> ' , luas , 'cm2'
 
 def trapesium () :
@@ -104,7 +104,7 @@ def trapesium () :
     keliling = ab+bc+cd+da
     luas = (x+y)*z/2
     print ('')
-    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Keliling >> ' , keliling , 'cm'
     print '[*]==// Luas >> ' , luas, 'cm2'
              
 def ketupat () :
@@ -114,7 +114,7 @@ def ketupat () :
     keliling = 4*z
     luas = 0.5*x*y
     print ('')
-    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Keliling >> ' , keliling , 'cm'
     print '[*]==// Luas >> ' , luas, 'cm2'
     
 def layang () :
@@ -125,7 +125,7 @@ def layang () :
 	keliling = 2(ab+bc)
 	luas = 0.5*x*y
 	print (' ' )
-	print '[*]==// Keliling >> ' , keliling , 'cm2'
+	print '[*]==// Keliling >> ' , keliling , 'cm'
 	print '[*]==// Luas >> ' , luas , 'cm2'
 	
 ans='Y'
