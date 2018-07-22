@@ -1,105 +1,202 @@
 import math
 # Gausah pake acara Recode Recode segala ya Kontol
 
-def square () :
+
+def banner():
+	print ('''
+[$]===========================[$]
+[$]==//     Math Tool     //==[$]
+[$]==// For Orang" Goblok //==[$]
+[$]===========================[$]
+[$]==// By >> N1ght.Hax0r //==[$]
+[$]==// FB >> Putra AR    //==[$]
+[$]===========================[$]
+''')
+def persegi () :
     x= float(input('[?]==// panjang sisi >> '))
+    keliling = 4*x
     luas= x*x
     print (' ' )
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Luas >> ' , luas , 'cm2'
     
-def cubic () :
+def kubik () :
 	x=float(input('[?]==// panjang sisi >> '))
-	luas= x*x
+	luas= 6*x*x
+	volume= x*x*x
 	print (' ' )
-	print ('[*]==// Luas >> ' , luas , 'cm3')
+	print '[*]==// Luas >> ' , luas , 'cm2'
+	print '[*]==// Volume >> ' , volume , 'cm3'
     
-def rectangle () :
+def persegipanjang () :
     x= float(input('[?]==// panjang >> '))
     y= float(input('[?]==// lebar >> '))
+    keliling = 2*(x+y)
     luas= x*y
     print (' ' )
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Luas >> ' , luas , 'cm2'
     
 def balok () :
 	x= float(input('[?]==// panjang >> '))
 	y= float(input('[?]==// lebar >> '))
 	z= float(input('[?]==// tinggi >> '))
-	luas= x*y*z
+	luas= 2((x*y)+(x*z)+(y*z))
+	volume= x*y*z
 	print (' ' )
-	print ('[*]==// Luas >> ' , luas , 'cm3')
+	print '[*]==// Luas >> ' , luas , 'cm2'
+	print '[*]==// Volume >> ' , volume , 'cm3'
     
-def triangle () :
+def limas () :
+	x= float(input('[?]==// luas alas >> '))
+	y= float(input('[?]==// tinggi >> '))
+	volume = 1/3*x*y
+	print (' ' )
+	print '[*]==// Volume >> ' , volume , 'cm3'
+	
+def segitiga () :
+    ab= float(input('[?]==// AB >> '))
+    bc= float(input('[?]==// BC >> '))
+    ca= float(input('[?]==// CA >> '))
     x= float(input('[?]==// alas >> '))
     y= float(input('[?]==// tinggi >> '))
+    keliling= ab+bc+ca
     luas=0.5*x*y
     print (' ' )
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Luas >> ' , luas , 'cm2'
     
-def circle () :
+def lingkaran () :
     x = float(input('[?]==// jari jari >> '))
     luas = 22/7*x*x
     print ('')
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print '[*]==// Luas >> ' , luas , 'cm2'
+
+def bola () :
+	x = float(input('[?]==// jari jari >> '))
+	luas = 4*22/7*x*x
+	volume = 4/3*22/7*x*x*x
+	print ('')
+	print '[*]==// Luas >> ' , luas , 'cm2'
+	print '[*]==// Volume >> ' , volume , 'cm3'
               
 def jajargenjang () :
+    ab= float(input('[?]==// AB >> '))
+    bc= float(input('[?]==// BC >> '))
+    cd= float(input('[?]==// CD >> '))
+    da= float(input('[?]==// DA >> '))
     x= float(input('[?]==// tinggi >> '))
     y= float(input('[?]==// alas >> '))
+    keliling = ab+bc+cd+da
     luas = x*y
     print ('')
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Luas >> ' , luas , 'cm2'
 
 def trapesium () :
+    ab= float(input('[?]==// AB >> '))
+    bc= float(input('[?]==// BC >> '))
+    cd= float(input('[?]==// CD >> '))
+    da= float(input('[?]==// DA >> '))
     x= float(input('[?]==// sisi atas >> '))
     y= float(input('[?]==// sisi bawah >> '))
     z= float(input('[?]==// tinggi >> '))
+    keliling = ab+bc+cd+da
     luas = (x+y)*z/2
     print ('')
-    print ('[*]==// Luas >> ' , luas, 'cm2')
+    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Luas >> ' , luas, 'cm2'
              
 def ketupat () :
     x= float(input('[?]==// diagonal 1 >> '))
     y= float(input('[?]==// diagonal 2 >> '))
+    z= float(input('[?]==// sisi >> '))
+    keliling = 4*z
     luas = 0.5*x*y
     print ('')
-    print ('[*]==// Luas >> ' , luas, 'cm2')
+    print '[*]==// Keliling >> ' , keliling , 'cm2'
+    print '[*]==// Luas >> ' , luas, 'cm2'
     
 def layang () :
+	ab= float(input('[?]==// AB >> '))
+	bc= float(input('[?]==// BC >> '))
 	x= float(input('[?]==// diagonal 1 >> '))
 	y= float(input('[?]==// diagonal 2 >> '))
+	keliling = 2(ab+bc)
 	luas = 0.5*x*y
 	print (' ' )
-	print ('[*]==// Luas >> ' , luas , 'cm2')
+	print '[*]==// Keliling >> ' , keliling , 'cm2'
+	print '[*]==// Luas >> ' , luas , 'cm2'
+	
+ans='Y'
+ans=str(raw_input('[?]==// Apakah Gua Tampan (Y/N)?'))
+if ans=='y'or ans=='Y':
+    banner()
     
-         
-pil = int(input('[+]===========================[+] \n[!]====//  Choose this  //====[!] \n[+]===========================[+] \n[1]==//      persegi      //==[1]\n[2]==//       kubik       //==[2]\n[3]==//  persegi panjang  //==[3]\n[4]==//       balok       //==[4]\n[5]==//     segi tiga     //==[5]\n[6]==//     lingkaran     //==[6]\n[7]==//   jajar genjang   //==[7]\n[8]==//     trapesium     //==[8]\n[9]==//   belah ketupat   //==[9]\n[10]==//  layang layang  //==[10]\n[+]===========================[+] \n\n[?]==// What is your choice? >> '))
-if pil == 1 :
-    square()
+elif ans=='n'or ans=='N':
+	print'[!]==// ASULO >:('
+	exit()
+      
+else:
+    print'[!]==// KENTOD'
+    exit()
+		
+kontol = int(input('''
+[+]===========================[+]
+[!]====// Luas / Volume //====[!]
+[!]====//     Bangun    //====[!]
+[!]====// Datar & Ruang //====[!]
+[+]===========================[+]
+[1]==//      persegi      //==[1]
+[2]==//       kubik       //==[2]
+[3]==//  persegi panjang  //==[3]
+[4]==//       balok       //==[4]
+[5]==//     segi tiga     //==[5]
+[6]==//       limas       //==[6]
+[7]==//     lingkaran     //==[7]
+[8]==//        bola       //==[8]
+[9]==//   jajar genjang   //==[9]
+[10]==//    trapesium    //==[10]
+[11]==//  belah ketupat  //==[11]
+[12]==//  layang layang  //==[12]
+[+]===========================[+]
+
+[?]==// What is your choice? >> '''))
+
+if kontol == 1 :
+    persegi()
     
-elif pil==2 :
-	cubic()
+elif kontol==2 :
+	kubik()
     
-elif pil==3 :
-    rectangle()
+elif kontol==3 :
+    persegipanjang()
     
-elif pil==4 :
+elif kontol==4 :
 	balok()
     
-elif pil==5:
-    triangle()
+elif kontol==5:
+    segitiga()
 
-elif pil==6 :
-    circle()
-
-elif pil ==7 :
+elif kontol==6:
+	limas()
+	
+elif kontol==7 :
+    lingkaran()
+    
+elif kontol==8:
+	bola()
+	
+elif kontol ==9 :
     jajargenjang()
 
-elif pil== 8 :
+elif kontol== 10 :
     trapesium()
 
-elif pil== 9 :
+elif kontol== 11 :
     ketupat()
     
-elif pil==10 :
+elif kontol==12 :
 	layang()
 	
 else :
