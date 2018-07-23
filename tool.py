@@ -1,17 +1,25 @@
 import math
+import os
 # Gausah pake acara Recode Recode segala ya Kontol
 
+W  = '\033[0m'  # white (default)
+R  = '\033[31m' # red
+G  = '\033[1;32m' # green bold
+O  = '\033[33m' # orange
+B  = '\033[34m' # blue
+P  = '\033[35m' # purple
+C  = '\033[36m' # cyan
+GR = '\033[37m' # gray
 
 def banner():
-	print ('''
-[$]===========================[$]
-[$]==//     Math Tool     //==[$]
-[$]==// For Orang" Goblok //==[$]
-[$]===========================[$]
-[$]==// By >> N1ght.Hax0r //==[$]
-[$]==// FB >> Putra AR    //==[$]
-[$]===========================[$]
-''')
+	print G+'[$]'+B+'==========================='+G+'[$]'
+	print '[$]'+B+'==//     '+C+'Math Tool'+B+'     //=='+G+'[$]'
+	print '[$]'+B+'==// '+C+'For Orang" '+R+'Goblok'+B+' //=='+G+'[$]'
+	print '[$]'+B+'==========================='+G+'[$]'
+	print '[$]'+B+'==// '+C+'By >> '+O+'N1ght.Hax0r '+B+'//=='+G+'[$]'
+	print '[$]'+B+'==// '+C+'FB >> '+O+'Putra AR    '+B+'//=='+G+'[$]'
+	print '[$]'+B+'==========================='+G+'[$]'
+
 def persegi () :
     x= float(input('[?]==// panjang sisi >> '))
     keliling = 4*x
@@ -129,7 +137,7 @@ def layang () :
 	print '[*]==// Luas >> ' , luas , 'cm2'
 	
 ans='Y'
-ans=str(raw_input('[?]==// Apakah Gua Tampan (Y/N)?'))
+ans=str(raw_input('[?]==// Apakah Putra itu Tampan (Y/N)?'))
 if ans=='y'or ans=='Y':
     banner()
     
@@ -143,4 +151,62 @@ else:
 		
 kontol = int(input('''
 [+]===========================[+]
-[!]====//  Tool Khusus  /
+[!]====//  Tool Khusus  //====[!]
+[!]====//     Bangun    //====[!]
+[!]====// Datar & Ruang //====[!]
+[+]===========================[+]
+[1]==//      persegi      //==[1]
+[2]==//       kubik       //==[2]
+[3]==//  persegi panjang  //==[3]
+[4]==//       balok       //==[4]
+[5]==//     segi tiga     //==[5]
+[6]==//       limas       //==[6]
+[7]==//     lingkaran     //==[7]
+[8]==//        bola       //==[8]
+[9]==//   jajar genjang   //==[9]
+[10]==//    trapesium    //==[10]
+[11]==//  belah ketupat  //==[11]
+[12]==//  layang layang  //==[12]
+[+]===========================[+]
+
+[?]==// What is your choice? >> '''))
+
+if kontol == 1 :
+    persegi()
+    
+elif kontol==2 :
+	kubik()
+    
+elif kontol==3 :
+    persegipanjang()
+    
+elif kontol==4 :
+	balok()
+    
+elif kontol==5:
+    segitiga()
+
+elif kontol==6:
+	limas()
+	
+elif kontol==7 :
+    lingkaran()
+    
+elif kontol==8:
+	bola()
+	
+elif kontol ==9 :
+    jajargenjang()
+
+elif kontol== 10 :
+    trapesium()
+
+elif kontol== 11 :
+    ketupat()
+    
+elif kontol==12 :
+	layang()
+	
+else :
+    print (' ' )
+    print ('[!]==// Yang Bener Dong Goblok')
