@@ -49,7 +49,7 @@ def balok () :
 	x= float(input('[?]==// panjang >> '))
 	y= float(input('[?]==// lebar >> '))
 	z= float(input('[?]==// tinggi >> '))
-	luas= 2((x*y)+(x*z)+(y*z))
+	luas= 2*((x*y)+(x*z)+(y*z))
 	volume= x*y*z
 	print (' ' )
 	print '[*]==// Luas >> ' , luas , 'cm2'
@@ -130,7 +130,7 @@ def layang () :
 	bc= float(input('[?]==// BC >> '))
 	x= float(input('[?]==// diagonal 1 >> '))
 	y= float(input('[?]==// diagonal 2 >> '))
-	keliling = 2(ab+bc)
+	keliling = 2*(ab+bc)
 	luas = 0.5*x*y
 	print (' ' )
 	print '[*]==// Keliling >> ' , keliling , 'cm'
