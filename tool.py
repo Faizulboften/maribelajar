@@ -1,5 +1,6 @@
 import math
 import os
+# Python 3
 # Gausah pake acara Recode Recode segala ya Kontol
 
 W  = '\033[0m'  # white (default)
@@ -12,29 +13,29 @@ C  = '\033[36m' # cyan
 GR = '\033[37m' # gray
 
 def banner():
-	print G+'[$]'+B+'==========================='+G+'[$]'
-	print '[$]'+B+'==//     '+C+'Math Tool'+B+'     //=='+G+'[$]'
-	print '[$]'+B+'==// '+C+'For Orang" '+R+'Goblok'+B+' //=='+G+'[$]'
-	print '[$]'+B+'==========================='+G+'[$]'
-	print '[$]'+B+'==// '+C+'By >> '+O+'N1ght.Hax0r '+B+'//=='+G+'[$]'
-	print '[$]'+B+'==// '+C+'FB >> '+O+'Putra AR    '+B+'//=='+G+'[$]'
-	print '[$]'+B+'==========================='+G+'[$]'
+	print (G+'[$]'+B+'==========================='+G+'[$]')
+	print ('[$]'+B+'==//     '+C+'Math Tool'+B+'     //=='+G+'[$]')
+	print ('[$]'+B+'==// '+C+'For Orang" '+R+'Goblok'+B+' //=='+G+'[$]')
+	print ('[$]'+B+'==========================='+G+'[$]')
+	print ('[$]'+B+'==// '+C+'By >> '+O+'N1ght.Hax0r '+B+'//=='+G+'[$]')
+	print ('[$]'+B+'==// '+C+'FB >> '+O+'Putra AR    '+B+'//=='+G+'[$]')
+	print ('[$]'+B+'==========================='+G+'[$]')
 
 def persegi () :
     x= float(input('[?]==// panjang sisi >> '))
     keliling = 4*x
     luas= x*x
     print (' ' )
-    print '[*]==// Keliling >> ' , keliling , 'cm'
-    print '[*]==// Luas >> ' , luas , 'cm2'
+    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print ('[*]==// Luas >> ' , luas , 'cm2')
     
 def kubik () :
 	x=float(input('[?]==// panjang sisi >> '))
 	luas= 6*x*x
 	volume= x*x*x
 	print (' ' )
-	print '[*]==// Luas >> ' , luas , 'cm2'
-	print '[*]==// Volume >> ' , volume , 'cm3'
+	print ('[*]==// Luas >> ' , luas , 'cm2')
+	print ('[*]==// Volume >> ' , volume , 'cm3')
     
 def persegipanjang () :
     x= float(input('[?]==// panjang >> '))
@@ -42,8 +43,8 @@ def persegipanjang () :
     keliling = 2*(x+y)
     luas= x*y
     print (' ' )
-    print '[*]==// Keliling >> ' , keliling , 'cm'
-    print '[*]==// Luas >> ' , luas , 'cm2'
+    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print ('[*]==// Luas >> ' , luas , 'cm2')
     
 def balok () :
 	x= float(input('[?]==// panjang >> '))
@@ -52,15 +53,15 @@ def balok () :
 	luas= 2*((x*y)+(x*z)+(y*z))
 	volume= x*y*z
 	print (' ' )
-	print '[*]==// Luas >> ' , luas , 'cm2'
-	print '[*]==// Volume >> ' , volume , 'cm3'
+	print ('[*]==// Luas >> ' , luas , 'cm2')
+	print ('[*]==// Volume >> ' , volume , 'cm3')
     
 def limas () :
 	x= float(input('[?]==// luas alas >> '))
 	y= float(input('[?]==// tinggi >> '))
 	volume = 1/3*x*y
 	print (' ' )
-	print '[*]==// Volume >> ' , volume , 'cm3'
+	print ('[*]==// Volume >> ' , volume , 'cm3')
 	
 def segitiga () :
     ab= float(input('[?]==// AB >> '))
@@ -71,22 +72,22 @@ def segitiga () :
     keliling= ab+bc+ca
     luas=0.5*x*y
     print (' ' )
-    print '[*]==// Keliling >> ' , keliling , 'cm'
-    print '[*]==// Luas >> ' , luas , 'cm2'
+    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print ('[*]==// Luas >> ' , luas , 'cm2')
     
 def lingkaran () :
     x = float(input('[?]==// jari jari >> '))
     luas = 22/7*x*x
     print ('')
-    print '[*]==// Luas >> ' , luas , 'cm2'
+    print ('[*]==// Luas >> ' , luas , 'cm2')
 
 def bola () :
 	x = float(input('[?]==// jari jari >> '))
 	luas = 4*22/7*x*x
 	volume = 4/3*22/7*x*x*x
 	print ('')
-	print '[*]==// Luas >> ' , luas , 'cm2'
-	print '[*]==// Volume >> ' , volume , 'cm3'
+	print ('[*]==// Luas >> ' , luas , 'cm2')
+	print ('[*]==// Volume >> ' , volume , 'cm3')
               
 def jajargenjang () :
     ab= float(input('[?]==// AB >> '))
@@ -98,8 +99,8 @@ def jajargenjang () :
     keliling = ab+bc+cd+da
     luas = x*y
     print ('')
-    print '[*]==// Keliling >> ' , keliling , 'cm'
-    print '[*]==// Luas >> ' , luas , 'cm2'
+    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print ('[*]==// Luas >> ' , luas , 'cm2')
 
 def trapesium () :
     ab= float(input('[?]==// AB >> '))
@@ -112,8 +113,8 @@ def trapesium () :
     keliling = ab+bc+cd+da
     luas = (x+y)*z/2
     print ('')
-    print '[*]==// Keliling >> ' , keliling , 'cm'
-    print '[*]==// Luas >> ' , luas, 'cm2'
+    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print ('[*]==// Luas >> ' , luas, 'cm2')
              
 def ketupat () :
     x= float(input('[?]==// diagonal 1 >> '))
@@ -122,8 +123,8 @@ def ketupat () :
     keliling = 4*z
     luas = 0.5*x*y
     print ('')
-    print '[*]==// Keliling >> ' , keliling , 'cm'
-    print '[*]==// Luas >> ' , luas, 'cm2'
+    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print ('[*]==// Luas >> ' , luas, 'cm2')
     
 def layang () :
 	ab= float(input('[?]==// AB >> '))
@@ -133,20 +134,20 @@ def layang () :
 	keliling = 2*(ab+bc)
 	luas = 0.5*x*y
 	print (' ' )
-	print '[*]==// Keliling >> ' , keliling , 'cm'
-	print '[*]==// Luas >> ' , luas , 'cm2'
+	print ('[*]==// Keliling >> ' , keliling , 'cm')
+	print ('[*]==// Luas >> ' , luas , 'cm2')
 	
 ans='Y'
-ans=str(raw_input('[?]==// Apakah Putra itu Tampan (Y/N)?'))
+ans=str(input('[?]==// Apakah Putra itu Tampan (Y/N)?'))
 if ans=='y'or ans=='Y':
     banner()
     
 elif ans=='n'or ans=='N':
-	print'[!]==// ASULO >:('
+	print ('[!]==// ASULO >:(')
 	exit()
       
 else:
-    print'[!]==// KENTOD'
+    print ('[!]==// KENTOD')
     exit()
 		
 kontol = int(input('''
