@@ -264,7 +264,7 @@ def tanya_3M() :
         banner()
 def tanya_persegi():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         keliling_persegi()
     
@@ -279,7 +279,7 @@ def tanya_persegi():
 
 def tanya_persegipanjang():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         keliling_persegipanjang()
     
@@ -294,7 +294,7 @@ def tanya_persegipanjang():
 
 def tanya_layang():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         keliling_layang()
     
@@ -309,7 +309,7 @@ def tanya_layang():
 
 def tanya_ketupat():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         keliling_ketupat()
     
@@ -324,7 +324,7 @@ def tanya_ketupat():
 
 def tanya_trapesium():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         keliling_trapesium()
     
@@ -339,7 +339,7 @@ def tanya_trapesium():
 
 def tanya_jajargenjang():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         keliling_jajargenjang()
     
@@ -354,7 +354,7 @@ def tanya_jajargenjang():
 
 def tanya_segitiga():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> \n[+]==>> \n[+]==>> \n[+]==>> '))
     if ans=='k'or ans=='K':
         keliling_segitiga()
     
@@ -369,7 +369,7 @@ def tanya_segitiga():
 
 def tanya_lingkaran():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> \n[+]==>> \n[+]==>> '))
     if ans=='k'or ans=='K':
         pilbangundatar()
     
@@ -384,7 +384,7 @@ def tanya_lingkaran():
 
 def tanya_bola():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         pilbangunruang()
     
@@ -399,7 +399,7 @@ def tanya_bola():
 
 def tanya_balok():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         pilbangunruang()
     
@@ -414,7 +414,7 @@ def tanya_balok():
 
 def tanya_kubik():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         pilbangunruang()
     
@@ -429,7 +429,7 @@ def tanya_kubik():
 
 def tanya_limas():
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?'))
+    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
     if ans=='k'or ans=='K':
         pilbangunruang()
     
@@ -508,8 +508,8 @@ def menu() :
 [+]===========================[+]
 [1]==//   Bangun  Datar   //==[1]
 [2]==//   Bangun  Ruang   //==[2]
-[3]==//       Prima       //==[3]
-[4]==//      Faktor       //==[4]
+[3]==//  Bilangan  Prima  //==[3]
+[4]==//  Faktor Bilangan  //==[4]
 [5]==// Mean/Median/Modus //==[5]
 [+]===========================[+]
 
