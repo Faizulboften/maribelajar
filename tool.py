@@ -124,6 +124,7 @@ def keliling_segitiga () :
     ab= float(input('[?]==// AB >> '))
     bc= float(input('[?]==// BC >> '))
     ca= float(input('[?]==// CA >> '))
+    keliling = ab+bc+ca
     print (' ' )
     print ('[*]==// Keliling >> ' , keliling , 'cm')
     
