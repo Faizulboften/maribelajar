@@ -4,13 +4,13 @@ import os
 # Gausah pake acara Recode Recode segala ya Kontol
 
 W  = '\033[0m'  # white (default)
-R  = '\033[31m' # red
+R  = '\033[1;31m' # red
 G  = '\033[1;32m' # green bold
-O  = '\033[33m' # orange
-B  = '\033[34m' # blue
-P  = '\033[35m' # purple
-C  = '\033[36m' # cyan
-GR = '\033[37m' # gray
+O  = '\033[1;33m' # orange
+B  = '\033[1;34m' # blue
+P  = '\033[1;35m' # purple
+C  = '\033[1;36m' # cyan
+GR = '\033[1;37m' # gray
 
 def banner():
 	print (G+'[$]'+B+'==========================='+G+'[$]')
@@ -20,6 +20,34 @@ def banner():
 	print ('[$]'+B+'==// '+C+'By >> '+O+'N1ght.Hax0r '+B+'//=='+G+'[$]')
 	print ('[$]'+B+'==// '+C+'FB >> '+O+'Putra AR    '+B+'//=='+G+'[$]')
 	print ('[$]'+B+'==========================='+G+'[$]')
+
+def about():
+    print ('')
+    print (G+'[*]==//'+O+' Kata Kata Unfaedah'+W)
+    print ('')
+    print ('Kami segenap anggota team Hax7 mengucapkan Terimakasih karena sudah menggunakan tool buatan kami (Sebenarnya buatan Saya sendiri). Kami membuat tool ini karena kami termotivasi dengan banyaknya orang orang Goblok yang masih berkeliaran di masyarakat (Termasuk Saya). Karena itu, kami pun membuat tool ini untuk membantu orang orang Goblok matematik untuk mengerjakan tugas ataupun menyelesaikan masalah yang ada di kehidupan sehari hari.')
+    print ('')
+    print (G+'[*]==//'+O+' How to Use'+W)
+    print ('')
+    print ('''Pilih menu
+Masukkan angka
+Selesai''')
+    print ('')
+    print (G+'[*]==//'+O+' What is new?'+W)
+    print ('')
+    print ('''Penambahan Fitur baru
+Penambahan kata kata Unfaedah
+Penambahan Ketampanan Saya :*
+''')
+    ans='Y'
+    ans=str(input(G+'[?]==//'+O+' Continue (Y/N)?\n'+G+'[+]==>> '))
+    if ans=='y'or ans=='Y':
+        banner()
+        menu()
+    elif ans=='n'or ans=='N':
+        exit()
+    else:
+        exit()
 
 
 def prima():
@@ -244,7 +272,7 @@ def luas_layang () :
     print ('[*]==// Luas >> ' , luas , 'cm2')
 	
 def tanya_3M() :      
-    fuck = int(input('''
+    kontol = int(input('''
 [+]===========================[+]
 [!]====// Bangun  Ruang //====[!]
 [+]===========================[+]
@@ -255,11 +283,11 @@ def tanya_3M() :
 
 [?]==// What is your choice? >> '''))
 
-    if fuck == 1 :
+    if kontol == 1 :
         mean()
-    elif fuck == 2 :
+    elif kontol == 2 :
         median()
-    elif fuck == 3 :
+    elif kontol == 3 :
         modus()
     else :
         banner()
@@ -444,7 +472,7 @@ def tanya_limas():
         exit()
 
 def pilbangundatar() :		
-    fuck = int(input('''
+    kontol = int(input('''
 [+]===========================[+]
 [!]====// Bangun  Datar //====[!]
 [+]===========================[+]
@@ -460,26 +488,26 @@ def pilbangundatar() :
 
 [?]==// What is your choice? >> '''))
 
-    if fuck == 1 :
+    if kontol == 1 :
         tanya_persegi()
-    elif fuck == 2 :
+    elif kontol == 2 :
         tanya_persegipanjang()
-    elif fuck == 3 :
+    elif kontol == 3 :
         tanya_segitiga()
-    elif fuck == 4 :
+    elif kontol == 4 :
         tanya_lingkaran()
-    elif fuck == 5 :
+    elif kontol == 5 :
         tanya_jajargenjang()
-    elif fuck == 6 :
+    elif kontol == 6 :
         tanya_trapesium()
-    elif fuck == 7 :
+    elif kontol == 7 :
         tanya_ketupat()
-    elif fuck == 8 :
+    elif kontol == 8 :
         tanya_layang()
     else :
         banner()
 def pilbangunruang() :      
-    fuck = int(input('''
+    kontol = int(input('''
 [+]===========================[+]
 [!]====// Bangun  Ruang //====[!]
 [+]===========================[+]
@@ -491,19 +519,19 @@ def pilbangunruang() :
 
 [?]==// What is your choice? >> '''))
 
-    if fuck == 1 :
+    if kontol == 1 :
         tanya_kubik()
-    elif fuck == 2 :
+    elif kontol == 2 :
         tanya_balok()
-    elif fuck == 3 :
+    elif kontol == 3 :
         tanya_limas()
-    elif fuck == 4 :
+    elif kontol == 4 :
         tanya_bola()
     else :
         banner()
 
 def menu() :
-    fuck = int(input('''
+    kontol = int(input('''
 [+]===========================[+]
 [!]====//     Menu      //====[!]
 [+]===========================[+]
@@ -513,19 +541,23 @@ def menu() :
 [4]==//  Faktor Bilangan  //==[4]
 [5]==// Mean/Median/Modus //==[5]
 [+]===========================[+]
+[0]==//       About       //==[0]
+[+]===========================[+]
 
 [?]==// What is your choice? >> '''))
 
-    if fuck == 1 :
+    if kontol == 1 :
         pilbangundatar()
-    elif fuck == 2 :
+    elif kontol == 2 :
         pilbangunruang()
-    elif fuck == 3 :
+    elif kontol == 3 :
         prima()
-    elif fuck == 4 :
+    elif kontol == 4 :
         faktor()
-    elif fuck == 5 :
+    elif kontol == 5 :
         tanya_3M()
+    elif kontol == 0 :
+        about()
     else :
         banner()
 banner()
