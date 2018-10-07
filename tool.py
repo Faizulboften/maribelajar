@@ -13,13 +13,20 @@ C  = '\033[1;36m' # cyan
 GR = '\033[1;37m' # gray
 
 def banner():
-	print (G+'[$]'+B+'==========================='+G+'[$]')
-	print ('[$]'+B+'==//     '+C+'Math Tool'+B+'     //=='+G+'[$]')
-	print ('[$]'+B+'==// '+C+'For Orang" '+R+'Goblok'+B+' //=='+G+'[$]')
-	print ('[$]'+B+'==========================='+G+'[$]')
-	print ('[$]'+B+'==// '+C+'By >> '+O+'N1ght.Hax0r '+B+'//=='+G+'[$]')
-	print ('[$]'+B+'==// '+C+'FB >> '+O+'Putra AR    '+B+'//=='+G+'[$]')
-	print ('[$]'+B+'==========================='+G+'[$]')
+
+
+                                      
+    print (C+'  _____     _   _      _____         _ ')
+    print (' |     |___| |_| |_   |_   _|___ ___| |')
+    print (' | | | | .\'|  _|   |    | | | . | . | |')
+    print (' |_|_|_|__,|_| |_|_|    |_| |___|___|_|')
+    print ('')
+    print (W+' =========================['+O+' V.2.5 '+W+']====')
+    print ('')
+    print (G+' By'+R+'   :'+W+' N1ght.Hax0r')
+    print (G+' With'+R+' :'+W+' 5 Function')
+    print ('')
+    print (W+' =========['+O+' IT Sharing Group '+W+']=========')
 
 def about():
     print ('')
@@ -51,37 +58,37 @@ Penambahan Ketampanan Saya :*
 
 
 def prima():
-    num = int(input("[?]==// Masukkan bilangan\n[+]==>> "))
+    num = int(input(G+' Masukkan Bilangan'+R+' > '+W))
     if num > 1:
         for i in range(2,num):
             if (num % i) == 0:
-                print("[*]==// Angka >>",num,"\n[!]==// bukan bilangan prima")
-                print("[*]==// Karena",i,"dikali",num//i,"=",num)
+                print (G+' Angka'+W, num ,R+' Bukan Bilangan Prima'+W)
+                print (G+' Karena '+W, i ,G+' Dikali '+W, num//i ,R+' = '+W, num)
                 break
         else:
-            print("[*]==// Angka >>",num,"\n[!]==// adalah bilangan prima")
+            print (G+' Angka'+W, num ,G+' Adalah Bilangan Prima'+W)
 
     else:
-        print("[*]==// Angka >>",num, "\n[!]==// bukan bilangan prima")
+        print (G+' Angka'+W, num ,R+' Bukan Bilangan Prima'+W)
 
 def fakt(x):
-    
-    print ("\n[!]==// Faktor dari", x, "adalah:")
+    print ("")
+    print (G+' Faktor Dari'+W+ x +G+' Adalah'+W)
     for i in range(1, x+1):
         if x % i == 0:
-            print ("[*]==>>", i)
+            print (" ", i)
 
 def faktor():
-    num = int(input("[?]==// Masukkan bilangan\n[+]==>> "))
+    num = int(input(G+' Masukkan Bilangan'+R+' > '+W))
     fakt(num)
 
 def mean():
-    data = str(input('[?]==// Masukan data\n[+]==>> '))
+    data = str(input(G+' Masukkan Data'+R+' > '+W))
     a = str(round(sum(data) / len(data), 2))
-    print("[!]==// Mean >>", a)
+    print(G+' Mean'+R+' > '+W+ a)
 
 def median():
-    data = str(input('[?]==// Masukan data\n[+]==>> '))
+    data = str(input(G+' Masukkan Data'+R+' > '+W))
     data.sort()
     if len(data) % 2 == 0:
         a = int(len(data) / 2)
@@ -92,10 +99,10 @@ def median():
         a = int((len(data) + 1) / 2)
         median = str(data[a - 1])
         
-    print("[!]==// Median >>", median)
+    print(G+' Median'+R+' > '+W, median)
 
 def modus():
-    data = str(input('[?]==// Masukan data\n[+]==>> '))
+    data = str(input(G+' Masukkan Data'+R+' > '+W))
     modus = max(set(data), key=data.count)
     a = data.count(modus)
     b = []
@@ -112,176 +119,172 @@ def modus():
             modus2.append(str(i))
         modus1 += ' & '.join(modus2)
     
-    print("[!]==// Modus >>",modus)
+    print(G+' Modus'+R+' > '+W, modus)
 
 def keliling_persegi () :
-    x= float(input('[?]==// panjang sisi >> '))
+    x= float(input(G+' Sisi'+R+' > '+W))
     keliling = 4*x
     print (' ' )
-    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print (G+' Keliling'+R+' > '+W, keliling ,G+'cm'+W)
     
 def luas_kubik () :
-	x=float(input('[?]==// panjang sisi >> '))
+	x=float(input(G+' Sisi'+R+' > '+W))
 	luas= 6*x*x
 	print (' ' )
-	print ('[*]==// Luas >> ' , luas , 'cm2')
+	print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
     
 def keliling_persegipanjang () :
-    x= float(input('[?]==// panjang >> '))
-    y= float(input('[?]==// lebar >> '))
+    x= float(input(G+' Panjang'+R+' > '+W))
+    y= float(input(G+' Lebar'+R+' > '+W))
     keliling = 2*(x+y)
     print (' ' )
-    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print (G+' Keliling'+R+' > '+W, keliling ,G+'cm'+W)
     
 def luas_balok () :
-	x= float(input('[?]==// panjang >> '))
-	y= float(input('[?]==// lebar >> '))
-	z= float(input('[?]==// tinggi >> '))
+	x= float(input(G+' Panjang'+R+' > '+W))
+	y= float(input(G+' Lebar'+R+' > '+W))
+	z= float(input(G+' Tinggi'+R+' > '+W))
 	luas= 2*((x*y)+(x*z)+(y*z))
 	print (' ' )
-	print ('[*]==// Luas >> ' , luas , 'cm2')
+	print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
     
 def volume_limas () :
-	x= float(input('[?]==// luas alas >> '))
-	y= float(input('[?]==// tinggi >> '))
+	x= float(input(G+' Luas Alas'+R+' > '+W))
+	y= float(input(G+' Tinggi'+R+' > '+W))
 	volume = 1/3*x*y
 	print (' ' )
-	print ('[*]==// Volume >> ' , volume , 'cm3')
+	print (G+' Volume'+R+' > '+W, volume ,G+'cm3'+W)
 	
 def keliling_segitiga () :
-    ab= float(input('[?]==// AB >> '))
-    bc= float(input('[?]==// BC >> '))
-    ca= float(input('[?]==// CA >> '))
+    ab= float(input(G+' Panjang AB'+R+' > '+W))
+    bc= float(input(G+' Panjang BC'+R+' > '+W))
+    ca= float(input(G+' Panjang CA'+R+' > '+W))
     keliling = ab+bc+ca
     print (' ' )
-    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print (G+' Keliling'+R+' > '+W, keliling ,G+'cm'+W)
     
 
 
 def luas_bola () :
-	x = float(input('[?]==// jari jari >> '))
+	x = float(input(G+' Jari Jari'+R+' > '+W))
 	luas = 4*22/7*x*x
 	print ('')
-	print ('[*]==// Luas >> ' , luas , 'cm2')
+	print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
               
 def keliling_jajargenjang () :
-    ab= float(input('[?]==// AB >> '))
-    bc= float(input('[?]==// BC >> '))
-    cd= float(input('[?]==// CD >> '))
-    da= float(input('[?]==// DA >> '))
+    ab= float(input(G+' Panjang AB'+R+' > '+W))
+    bc= float(input(G+' Panjang BC'+R+' > '+W))
+    cd= float(input(G+' Panjang CD'+R+' > '+W))
+    da= float(input(G+' Panjang DA'+R+' > '+W))
     keliling = ab+bc+cd+da
     print ('')
-    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print (G+' Keliling'+R+' > '+W, keliling ,G+'cm'+W)
 
 def keliling_trapesium () :
-    ab= float(input('[?]==// AB >> '))
-    bc= float(input('[?]==// BC >> '))
-    cd= float(input('[?]==// CD >> '))
-    da= float(input('[?]==// DA >> '))
+    ab= float(input(G+' Panjang AB'+R+' > '+W))
+    bc= float(input(G+' Panjang BC'+R+' > '+W))
+    cd= float(input(G+' Panjang CD'+R+' > '+W))
+    da= float(input(G+' Panjang DA'+R+' > '+W))
     keliling = ab+bc+cd+da
     print ('')
-    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print (G+' Keliling'+R+' > '+W, keliling ,G+'cm'+W)
              
 def keliling_ketupat () :
-    z= float(input('[?]==// sisi >> '))
+    z= float(input(G+' Sisi'+R+' > '+W))
     keliling = 4*z
     print ('')
-    print ('[*]==// Keliling >> ' , keliling , 'cm')
+    print (G+' Keliling'+R+' > '+W, keliling ,G+'cm'+W)
     
 def keliling_layang () :
-	ab= float(input('[?]==// AB >> '))
-	bc= float(input('[?]==// BC >> '))
+	ab= float(input(G+' Panjang AB'+R+' > '+W))
+	bc= float(input(G+' Panjang BC'+R+' > '+W))
 	keliling = 2*(ab+bc)
 	print (' ' )
-	print ('[*]==// Keliling >> ' , keliling , 'cm')
+	print (G+' Keliling'+R+' > '+W, keliling ,G+'cm'+W)
 
 
 def luas_persegi () :
-    x= float(input('[?]==// panjang sisi >> '))
+    x= float(input(G+' Sisi'+R+' > '+W))
     luas= x*x
     print (' ' )
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
     
 def volume_kubik () :
-    x=float(input('[?]==// panjang sisi >> '))
+    x=float(input(G+' Sisi'+R+' > '+W))
     volume= x*x*x
     print (' ' )
-    print ('[*]==// Volume >> ' , volume , 'cm3')
+    print (G+' Volume'+R+' > '+W, volume ,G+'cm3'+W)
     
 def luas_persegipanjang () :
-    x= float(input('[?]==// panjang >> '))
-    y= float(input('[?]==// lebar >> '))
+    x= float(input(G+' Panjang'+R+' > '+W))
+    y= float(input(G+' Lebar'+R+' > '+W))
     luas= x*y
     print (' ' )
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
     
 def volume_balok () :
-    x= float(input('[?]==// panjang >> '))
-    y= float(input('[?]==// lebar >> '))
-    z= float(input('[?]==// tinggi >> '))
+    x= float(input(G+' Panjang'+R+' > '+W))
+    y= float(input(G+' Lebar'+R+' > '+W))
+    z= float(input(G+' Tinggi'+R+' > '+W))
     volume= x*y*z
     print (' ' )
-    print ('[*]==// Volume >> ' , volume , 'cm3')
+    print (G+' Volume'+R+' > '+W, volume ,G+'cm3'+W)
     
 def luas_segitiga () :
-    x= float(input('[?]==// alas >> '))
-    y= float(input('[?]==// tinggi >> '))
+    x= float(input(G+' Alas'+R+' > '+W))
+    y= float(input(G+' Tinggi'+R+' > '+W))
     luas=0.5*x*y
     print (' ' )
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
 
 def luas_lingkaran () :
-    x = float(input('[?]==// jari jari >> '))
+    x = float(input(G+' Jari Jari'+R+' > '+W))
     luas = 22/7*x*x
     print ('')
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
 
 def volume_bola () :
-    x = float(input('[?]==// jari jari >> '))
+    x = float(input(G+' Jari Jari'+R+' > '+W))
     volume = 4/3*22/7*x*x*x
     print ('')
-    print ('[*]==// Volume >> ' , volume , 'cm3')
+    print (G+' Volume'+R+' > '+W, volume ,G+'cm3'+W)
               
 def luas_jajargenjang () :
-    x= float(input('[?]==// tinggi >> '))
-    y= float(input('[?]==// alas >> '))
+    x= float(input(G+' Tinggi'+R+' > '+W))
+    y= float(input(G+' Alas'+R+' > '+W))
     luas = x*y
     print ('')
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
 
 def luas_trapesium () :
-    x= float(input('[?]==// sisi atas >> '))
-    y= float(input('[?]==// sisi bawah >> '))
-    z= float(input('[?]==// tinggi >> '))
+    x= float(input(G+' Sisi Atas'+R+' > '+W))
+    y= float(input(G+' Sisi Bawah'+R+' > '+W))
+    z= float(input(G+' Tinggi'+R+' > '+W))
     luas = (x+y)*z/2
     print ('')
-    print ('[*]==// Luas >> ' , luas, 'cm2')
+    print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
              
 def luas_ketupat () :
-    x= float(input('[?]==// diagonal 1 >> '))
-    y= float(input('[?]==// diagonal 2 >> '))
+    x= float(input(G+' Diagonal 1'+R+' > '+W))
+    y= float(input(G+' Diagonal 2'+R+' > '+W))
     luas = 0.5*x*y
     print ('')
-    print ('[*]==// Luas >> ' , luas, 'cm2')
+    print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
     
 def luas_layang () :
-    x= float(input('[?]==// diagonal 1 >> '))
-    y= float(input('[?]==// diagonal 2 >> '))
+    x= float(input(G+' Diagonal 1'+R+' > '+W))
+    y= float(input(G+' Diagonal 2'+R+' > '+W))
     luas = 0.5*x*y
     print (' ' )
-    print ('[*]==// Luas >> ' , luas , 'cm2')
+    print (G+' Luas'+R+' > '+W, luas ,G+'cm2'+W)
 	
 def tanya_3M() :      
-    kontol = int(input('''
-[+]===========================[+]
-[!]====// Bangun  Ruang //====[!]
-[+]===========================[+]
-[1]==//       Mean        //==[1]
-[2]==//       Median      //==[2]
-[3]==//       Modus       //==[3]
-[+]===========================[+]
-
-[?]==// What is your choice? >> '''))
+    print ('')
+    print (G+' 01'+R+' :'+W+' Mean')
+    print (G+' 02'+R+' :'+W+' Median')
+    print (G+' 03'+R+' :'+W+' Modus')
+    print ('')
+    kontol = int(input(G+' Menu '+R+'> '+W))
 
     if kontol == 1 :
         mean()
@@ -292,201 +295,257 @@ def tanya_3M() :
     else :
         banner()
 def tanya_persegi():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         keliling_persegi()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_persegi()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         pilbangundatar()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_persegipanjang():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         keliling_persegipanjang()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_persegipanjang()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         pilbangundatar()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_layang():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         keliling_layang()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_layang()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         pilbangundatar()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_ketupat():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         keliling_ketupat()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_ketupat()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         pilbangundatar()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_trapesium():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         keliling_trapesium()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_trapesium()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         pilbangundatar()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_jajargenjang():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         keliling_jajargenjang()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_jajargenjang()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         pilbangundatar()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_segitiga():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
     ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> \n[+]==>> \n[+]==>> \n[+]==>> '))
-    if ans=='k'or ans=='K':
+    if ans=='01'or ans=='1':
         keliling_segitiga()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_segitiga()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         pilbangundatar()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_lingkaran():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
     ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> \n[+]==>> \n[+]==>> '))
-    if ans=='k'or ans=='K':
+    if ans=='01'or ans=='1':
         pilbangundatar()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_lingkaran()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         pilbangundatar()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_bola():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         pilbangunruang()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_bola()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         volume_bola()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_balok():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         pilbangunruang()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_balok()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         volume_balok()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_kubik():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         pilbangunruang()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         luas_kubik()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         volume_kubik()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def tanya_limas():
+    print ('')
+    print (G+' 01'+R+' :'+W+' Keliling')
+    print (G+' 02'+R+' :'+W+' Luas')
+    print (G+' 03'+R+' :'+W+' Volume')
+    print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> '))
-    if ans=='k'or ans=='K':
+    ans=str(input(G+' Menu '+R+'> '+W))
+    if ans=='01'or ans=='1':
         pilbangunruang()
     
-    elif ans=='l'or ans=='L':
+    elif ans=='02'or ans=='2':
         pilbangunruang()
 
-    elif ans=='v'or ans=='V':
+    elif ans=='03'or ans=='3':
         volume_limas()      
     else:
         print ('[!]==// Abort')
         exit()
 
 def pilbangundatar() :		
-    kontol = int(input('''
-[+]===========================[+]
-[!]====// Bangun  Datar //====[!]
-[+]===========================[+]
-[1]==//      persegi      //==[1]
-[2]==//  persegi panjang  //==[2]
-[3]==//     segi tiga     //==[3]
-[4]==//     lingkaran     //==[4]
-[5]==//   jajar genjang   //==[5]
-[6]==//     trapesium     //==[6]
-[7]==//   belah ketupat   //==[7]
-[8]==//   layang layang   //==[8]
-[+]===========================[+]
-
-[?]==// What is your choice? >> '''))
+    print ('')
+    print (G+' 01'+R+' :'+W+' Persegi')
+    print (G+' 02'+R+' :'+W+' Persegi Panjang')
+    print (G+' 03'+R+' :'+W+' Segitiga')
+    print (G+' 04'+R+' :'+W+' Lingkaran')
+    print (G+' 05'+R+' :'+W+' Jajar Genjang')
+    print (G+' 06'+R+' :'+W+' Trapesium')
+    print (G+' 07'+R+' :'+W+' Belah Ketupat')
+    print (G+' 08'+R+' :'+W+' Layang Layang')
+    print ('')
+    kontol = int(input(G+' Menu '+R+'> '+W))
 
     if kontol == 1 :
         tanya_persegi()
@@ -507,17 +566,13 @@ def pilbangundatar() :
     else :
         banner()
 def pilbangunruang() :      
-    kontol = int(input('''
-[+]===========================[+]
-[!]====// Bangun  Ruang //====[!]
-[+]===========================[+]
-[1]==//       kubik       //==[1]
-[2]==//       balok       //==[2]
-[3]==//       limas       //==[3]
-[4]==//        bola       //==[4]
-[+]===========================[+]
-
-[?]==// What is your choice? >> '''))
+    print ('')
+    print (G+' 01'+R+' :'+W+' Kubik')
+    print (G+' 02'+R+' :'+W+' Balok')
+    print (G+' 03'+R+' :'+W+' Limas')
+    print (G+' 04'+R+' :'+W+' Bola')
+    print ('')
+    kontol = int(input(G+' Menu '+R+'> '+W))
 
     if kontol == 1 :
         tanya_kubik()
@@ -531,20 +586,15 @@ def pilbangunruang() :
         banner()
 
 def menu() :
-    kontol = int(input('''
-[+]===========================[+]
-[!]====//     Menu      //====[!]
-[+]===========================[+]
-[1]==//   Bangun  Datar   //==[1]
-[2]==//   Bangun  Ruang   //==[2]
-[3]==//  Bilangan  Prima  //==[3]
-[4]==//  Faktor Bilangan  //==[4]
-[5]==// Mean/Median/Modus //==[5]
-[+]===========================[+]
-[0]==//       About       //==[0]
-[+]===========================[+]
-
-[?]==// What is your choice? >> '''))
+    print ('')
+    print (G+' 01'+R+' :'+W+' Bangun Datar')
+    print (G+' 02'+R+' :'+W+' Bangun Ruang')
+    print (G+' 03'+R+' :'+W+' Bilangan Prima')
+    print (G+' 04'+R+' :'+W+' Faktor Bilangan')
+    print (G+' 05'+R+' :'+W+' Mean / Median / Modus')
+    print (G+' 06'+R+' :'+W+' Credits')
+    print ('')
+    kontol = int(input(G+' Menu '+R+'> '+W))
 
     if kontol == 1 :
         pilbangundatar()
@@ -556,7 +606,7 @@ def menu() :
         faktor()
     elif kontol == 5 :
         tanya_3M()
-    elif kontol == 0 :
+    elif kontol == 6 :
         about()
     else :
         banner()
