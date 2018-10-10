@@ -421,7 +421,7 @@ def tanya_segitiga():
     print (G+' 03'+R+' :'+W+' Volume')
     print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> \n[+]==>> \n[+]==>> \n[+]==>> '))
+    ans=str(input(G+' Menu '+R+'> '+W))
     if ans=='01'or ans=='1':
         keliling_segitiga()
     
@@ -441,7 +441,7 @@ def tanya_lingkaran():
     print (G+' 03'+R+' :'+W+' Volume')
     print ('')
     ans='0'
-    ans=str(input('[?]==// Keliling / Luas / Volume (K/L/V)?\n[+]==>> \n[+]==>> \n[+]==>> '))
+    ans=str(input(G+' Menu '+R+'> '+W))
     if ans=='01'or ans=='1':
         pilbangundatar()
     
@@ -593,6 +593,7 @@ def menu() :
     print (G+' 04'+R+' :'+W+' Faktor Bilangan')
     print (G+' 05'+R+' :'+W+' Mean / Median / Modus')
     print (G+' 06'+R+' :'+W+' Credits')
+    print (G+' 00'+R+' :'+W+' Exit')
     print ('')
     kontol = int(input(G+' Menu '+R+'> '+W))
 
@@ -608,7 +609,10 @@ def menu() :
         tanya_3M()
     elif kontol == 6 :
         about()
+    elif kontol == 0 :
+        exit()
     else :
         banner()
+        menu()
 banner()
 menu()
