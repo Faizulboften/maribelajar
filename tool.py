@@ -21,12 +21,12 @@ def banner():
     print (' | | | | .\'|  _|   |    | | | . | . | |')
     print (' |_|_|_|__,|_| |_|_|    |_| |___|___|_|')
     print ('')
-    print (W+' =========================['+O+' V.2.5 '+W+']====')
+    print (W+' =========================['+O+' V.2.5 '+W+']=====')
     print ('')
     print (G+' By'+R+'   :'+W+' N1ght.Hax0r')
     print (G+' With'+R+' :'+W+' 5 Function')
     print ('')
-    print (W+' =========['+O+' IT Sharing Group '+W+']=========')
+    print (W+' =========['+O+' Code Your Freedom '+W+']=========')
 
 def about():
     print ('')
