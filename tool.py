@@ -1,7 +1,6 @@
 import math
 import os
 # Python 3
-# Gausah pake acara Recode Recode segala ya Kontol
 
 W  = '\033[0m'  # white (default)
 R  = '\033[1;31m' # red
