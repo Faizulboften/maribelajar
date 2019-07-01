@@ -1,5 +1,5 @@
 # Math-tool
-Tool for orang goblok matematik by N1ght.Hax0r
+Tool for math by N1ght.Hax0r
 # Dependency
 python3
 # Usage
