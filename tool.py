@@ -20,41 +20,12 @@ def banner():
     print (' | | | | .\'|  _|   |    | | | . | . | |')
     print (' |_|_|_|__,|_| |_|_|    |_| |___|___|_|')
     print ('')
-    print (W+' =========================['+O+' V.2.5 '+W+']=====')
+    print (W+' =========================['+O+' V.3.0 '+W+']=====')
     print ('')
     print (G+' By'+R+'   :'+W+' N1ght.Hax0r')
     print (G+' With'+R+' :'+W+' 5 Function')
     print ('')
     print (W+' =========['+O+' Code Your Freedom '+W+']=========')
-
-def about():
-    print ('')
-    print (G+'[*]==//'+O+' Kata Kata Unfaedah'+W)
-    print ('')
-    print ('Kami segenap anggota team Hax7 mengucapkan Terimakasih karena sudah menggunakan tool buatan kami (Sebenarnya buatan Saya sendiri). Kami membuat tool ini karena kami termotivasi dengan banyaknya orang orang Goblok yang masih berkeliaran di masyarakat (Termasuk Saya). Karena itu, kami pun membuat tool ini untuk membantu orang orang Goblok matematik untuk mengerjakan tugas ataupun menyelesaikan masalah yang ada di kehidupan sehari hari.')
-    print ('')
-    print (G+'[*]==//'+O+' How to Use'+W)
-    print ('')
-    print ('''Pilih menu
-Masukkan angka
-Selesai''')
-    print ('')
-    print (G+'[*]==//'+O+' What is new?'+W)
-    print ('')
-    print ('''Penambahan Fitur baru
-Penambahan kata kata Unfaedah
-Penambahan Ketampanan Saya :*
-''')
-    ans='Y'
-    ans=str(input(G+'[?]==//'+O+' Continue (Y/N)?\n'+G+'[+]==>> '))
-    if ans=='y'or ans=='Y':
-        banner()
-        menu()
-    elif ans=='n'or ans=='N':
-        exit()
-    else:
-        exit()
-
 
 def prima():
     num = int(input(G+' Masukkan Bilangan'+R+' > '+W))
@@ -162,8 +133,6 @@ def keliling_segitiga () :
     print (' ' )
     print (G+' Keliling'+R+' > '+W, keliling ,G+'cm'+W)
     
-
-
 def luas_bola () :
 	x = float(input(G+' Jari Jari'+R+' > '+W))
 	luas = 4*22/7*x*x
@@ -200,7 +169,6 @@ def keliling_layang () :
 	keliling = 2*(ab+bc)
 	print (' ' )
 	print (G+' Keliling'+R+' > '+W, keliling ,G+'cm'+W)
-
 
 def luas_persegi () :
     x= float(input(G+' Sisi'+R+' > '+W))
@@ -283,13 +251,13 @@ def tanya_3M() :
     print (G+' 02'+R+' :'+W+' Median')
     print (G+' 03'+R+' :'+W+' Modus')
     print ('')
-    kontol = int(input(G+' Menu '+R+'> '+W))
+    menu = int(input(G+' Menu '+R+'> '+W))
 
-    if kontol == 1 :
+    if menu == 1 :
         mean()
-    elif kontol == 2 :
+    elif menu == 2 :
         median()
-    elif kontol == 3 :
+    elif menu == 3 :
         modus()
     else :
         banner()
@@ -544,23 +512,23 @@ def pilbangundatar() :
     print (G+' 07'+R+' :'+W+' Belah Ketupat')
     print (G+' 08'+R+' :'+W+' Layang Layang')
     print ('')
-    kontol = int(input(G+' Menu '+R+'> '+W))
+    menu = int(input(G+' Menu '+R+'> '+W))
 
-    if kontol == 1 :
+    if menu == 1 :
         tanya_persegi()
-    elif kontol == 2 :
+    elif menu == 2 :
         tanya_persegipanjang()
-    elif kontol == 3 :
+    elif menu == 3 :
         tanya_segitiga()
-    elif kontol == 4 :
+    elif menu == 4 :
         tanya_lingkaran()
-    elif kontol == 5 :
+    elif menu == 5 :
         tanya_jajargenjang()
-    elif kontol == 6 :
+    elif menu == 6 :
         tanya_trapesium()
-    elif kontol == 7 :
+    elif menu == 7 :
         tanya_ketupat()
-    elif kontol == 8 :
+    elif menu == 8 :
         tanya_layang()
     else :
         banner()
@@ -571,15 +539,15 @@ def pilbangunruang() :
     print (G+' 03'+R+' :'+W+' Limas')
     print (G+' 04'+R+' :'+W+' Bola')
     print ('')
-    kontol = int(input(G+' Menu '+R+'> '+W))
+    menu = int(input(G+' Menu '+R+'> '+W))
 
-    if kontol == 1 :
+    if menu == 1 :
         tanya_kubik()
-    elif kontol == 2 :
+    elif menu == 2 :
         tanya_balok()
-    elif kontol == 3 :
+    elif menu == 3 :
         tanya_limas()
-    elif kontol == 4 :
+    elif menu == 4 :
         tanya_bola()
     else :
         banner()
@@ -591,24 +559,21 @@ def menu() :
     print (G+' 03'+R+' :'+W+' Bilangan Prima')
     print (G+' 04'+R+' :'+W+' Faktor Bilangan')
     print (G+' 05'+R+' :'+W+' Mean / Median / Modus')
-    print (G+' 06'+R+' :'+W+' Credits')
     print (G+' 00'+R+' :'+W+' Exit')
     print ('')
-    kontol = int(input(G+' Menu '+R+'> '+W))
+    menu = int(input(G+' Menu '+R+'> '+W))
 
-    if kontol == 1 :
+    if menu == 1 :
         pilbangundatar()
-    elif kontol == 2 :
+    elif menu == 2 :
         pilbangunruang()
-    elif kontol == 3 :
+    elif menu == 3 :
         prima()
-    elif kontol == 4 :
+    elif menu == 4 :
         faktor()
-    elif kontol == 5 :
+    elif menu == 5 :
         tanya_3M()
-    elif kontol == 6 :
-        about()
-    elif kontol == 0 :
+    elif menu == 0 :
         exit()
     else :
         banner()
