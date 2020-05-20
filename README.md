@@ -1,5 +1,5 @@
 # Math-tool
-Tool for math by N1ght.Hax0r
+Tool for math
 # Dependency
 python3
 # Usage
