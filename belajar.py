@@ -12,20 +12,19 @@ C  = '\033[1;36m' # cyan
 GR = '\033[1;37m' # gray
 
 def banner():
-
-
-                                      
-    print (C+'  _____     _   _      _____         _ ')
-    print (' |     |___| |_| |_   |_   _|___ ___| |')
-    print (' | | | | .\'|  _|   |    | | | . | . | |')
-    print (' |_|_|_|__,|_| |_|_|    |_| |___|___|_|')
+                               
+    print (O+'╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳') 
+    print (' ┣┫┃┗┳━┫┗┳━┓┏┳┳━┳┳┓')
+    print (' ┃┃┃┃┃╋┃┏┫┻┫┃┃┃╋┃┃┃')
+    print (' ┗┛┗┻┻┻┻━┻━┛┣┓┣━┻━┛')
+    print ('  ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳')
     print ('')
-    print (W+' =========================['+O+' V.3.0 '+W+']=====')
+    print (W+' =========================['+O+' V.4.0 '+W+']=====')
     print ('')
-    print (G+' By'+R+'   :'+W+' N1ght.Hax0r')
+    print (O+' Author'+P+'   :'+R+' Faizul Boften')
     print (G+' With'+R+' :'+W+' 5 Function')
     print ('')
-    print (W+' =========['+O+' Code Your Freedom '+W+']=========')
+    print (W+' =========['+O+' ✔ Code Bilangan ✔ '+W+']=========')
 
 def prima():
     num = int(input(G+' Masukkan Bilangan'+R+' > '+W))
